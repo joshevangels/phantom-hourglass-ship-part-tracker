@@ -1,7 +1,15 @@
 body {
-    background: #19b5fe
-}
+    display: flex;
+    margin: 0;
+    background: #ecf0f1;
 
-h2 {
-    color: #ecf0f1
+    .page {
+        .header {
+            background: #19b5fe;
+            color: #ecf0f1;
+            padding: 20px;
+            width: calc(100% - 40px);
+            position: absolute;
+        }
+    }
 }
