@@ -1,7 +1,7 @@
 import {shallow} from "enzyme";
 import * as React from "react";
-import { IShipSeriesCardProps, ShipSeriesCard } from "../ShipSeriesCard.component";
 import { IShipSeriesInfo } from "../../ShipSeriesList";
+import { IShipSeriesCardProps, ShipSeriesCard } from "../ShipSeriesCard.component";
 
 describe("ShipSeriesCard Component", () => {
 
