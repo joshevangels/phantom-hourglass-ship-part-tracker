@@ -2,14 +2,33 @@ body {
     display: flex;
     margin: 0;
     background: #ecf0f1;
+    font-family: Helvetica, Verdana, Geneva, Tahoma, sans-serif;
 
     .page {
-        .header {
+        header {
             background: #19b5fe;
-            color: #ecf0f1;
+            color: #150811;
             padding: 20px;
             width: calc(100% - 40px);
             position: absolute;
+        }
+
+        main {
+            padding-top: 40px + 70px + 30px;
+            padding-left: 40px;
+
+            .ship-series-cards {
+                display: flex;
+                flex-direction: row;
+                
+                .ship-series-card {
+                    padding: 20px;
+    
+                    .ship-parts {
+                        padding-left: 10px;
+                    }
+                }
+            }
         }
     }
 }

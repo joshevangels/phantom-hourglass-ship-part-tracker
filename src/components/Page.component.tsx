@@ -1,27 +1,28 @@
-import * as React from 'react';
-import { ShipCard } from './ShipCard.component';
+import * as React from "react";
+import {AllSeries, IShipSeriesInfo} from "../ShipSeriesList";
+import { ShipSeriesCard } from "./ShipSeriesCard.component";
 
 export class Page extends React.Component {
     public render() {
-        return <div className="page">
-            <header className="header">
-                <h2>
-                    Phantom Hourglass Ship Part Tracker
-                </h2>
-            </header>
-            <div className="ship-cards">
-                {this.renderShipCards()}
+        return (
+            <div className="page">
+                <header>
+                    <h2>
+                        Phantom Hourglass Ship Part Tracker
+                    </h2>
+                </header>
+                <main>
+                    <div className="ship-series-cards">
+                        {this.renderShipCards()}
+                    </div>
+                </main>
             </div>
-        </div>;
+        );
     }
 
     private renderShipCards() {
-        return <div className="ship-cards">
-            <ShipCard/>
-            <ShipCard/>
-            <ShipCard/>
-            <ShipCard/>
-            <ShipCard/>
-        </div>
+        return AllSeries.map( (series: IShipSeriesInfo) => {
+            return <ShipSeriesCard key={`ship-series-${series.seriesName}`} series={series}/>;
+        });
     }
 }

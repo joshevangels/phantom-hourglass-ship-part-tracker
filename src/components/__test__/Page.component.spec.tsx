@@ -1,6 +1,6 @@
-import {shallow, ShallowWrapper} from "enzyme";
+import {shallow} from "enzyme";
 import * as React from "react";
-import { Page } from '../Page.component';
+import { Page } from "../Page.component";
 
 describe("Page Component", () => {
     it("renders the header component", () => {
@@ -14,16 +14,16 @@ describe("Page Component", () => {
     it("renders the ship cards section", () => {
         const subject = shallow(<Page/>);
 
-        const content = subject.find(".ship-cards");
+        const content = subject.find(".ship-series-cards");
 
         expect(content.exists()).toBe(true);
     });
 
-    it("renders 5 card components", () => {
+    it("renders all 8 card components", () => {
         const subject = shallow(<Page/>);
 
-        const cards = subject.find("ShipCard");
+        const cards = subject.find("ShipSeriesCard");
 
-        expect(cards.length).toBe(5);
+        expect(cards.length).toBe(8);
     });
 });
