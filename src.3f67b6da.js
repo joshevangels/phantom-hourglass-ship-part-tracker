@@ -22,4 +22,4 @@ var e=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0});var n=
 },{"react":"1n8/","../ShipSeriesList":"YkhY","./ShipSeriesCard.component":"dAB8"}],"zo2T":[function(require,module,exports) {
 "use strict";var e=this&&this.__importStar||function(e){if(e&&e.__esModule)return e;var r={};if(null!=e)for(var t in e)Object.hasOwnProperty.call(e,t)&&(r[t]=e[t]);return r.default=e,r};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("react")),t=e(require("react-dom")),n=require("./components/Page.component"),o=function(){t.render(r.createElement(n.Page,null),document.getElementById("root"))};o();
 },{"react":"1n8/","react-dom":"NKHc","./components/Page.component":"EDlI"}]},{},["zo2T"], null)
-//# sourceMappingURL=phantom-hourglass-ship-part-tracker/src.3f67b6da.js.map
+//# sourceMappingURL=/phantom-hourglass-ship-part-tracker/src.3f67b6da.js.map
