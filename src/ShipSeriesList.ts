@@ -1,6 +1,7 @@
 export interface IShipSeriesInfo {
     seriesName: string;
     parts: string[];
+    bonus: number[];
 }
 
 const BrightSeries: IShipSeriesInfo = {
@@ -15,6 +16,7 @@ const BrightSeries: IShipSeriesInfo = {
         "Elegant Chimney",
         "Paddling Wheel",
     ],
+    bonus: [0, 0, 0, 1, 1, 1, 2, 2, 3],
 };
 const IronSeries: IShipSeriesInfo = {
     seriesName: "Iron Series",
@@ -28,6 +30,7 @@ const IronSeries: IShipSeriesInfo = {
         "Parasol Chimney",
         "Battle Wheel",
     ],
+    bonus: [0, 0, 0, 1, 1, 1, 2, 2, 3],
  };
 const StoneSeries: IShipSeriesInfo = {
     seriesName: "Stone Series",
@@ -41,6 +44,7 @@ const StoneSeries: IShipSeriesInfo = {
         "Stone Chimney",
         "Rock Wheel",
     ],
+    bonus: [0, 0, 0, 1, 1, 1, 2, 2, 3],
  };
 const VintageSeries: IShipSeriesInfo = {
     seriesName: "Vintage Series",
@@ -54,6 +58,7 @@ const VintageSeries: IShipSeriesInfo = {
         "Strange Chimney",
         "Simple Wheel",
     ],
+    bonus: [0, 0, 0, 1, 1, 1, 2, 2, 3],
 };
 const DemonSeries: IShipSeriesInfo = {
     seriesName: "Demon Series",
@@ -67,6 +72,7 @@ const DemonSeries: IShipSeriesInfo = {
         "Demon Chimney",
         "Insect Wheel",
     ],
+    bonus: [0, 0, 0, 1, 1, 1, 2, 2, 3],
 };
 const TropicalSeries: IShipSeriesInfo = {
     seriesName: "Tropical Series",
@@ -80,6 +86,7 @@ const TropicalSeries: IShipSeriesInfo = {
         "Horn Chimney",
         "Shell Wheel",
     ],
+    bonus: [0, 0, 0, 1, 1, 1, 2, 2, 3],
 };
 const DignifiedSeries: IShipSeriesInfo = {
     seriesName: "Dignified Series",
@@ -93,6 +100,7 @@ const DignifiedSeries: IShipSeriesInfo = {
         "Tall Chimney",
         "Red Wheel",
     ],
+    bonus: [0, 0, 0, 1, 1, 1, 2, 2, 3],
 };
 const GoldenSeries: IShipSeriesInfo = {
     seriesName: "Golden Series",
@@ -106,6 +114,7 @@ const GoldenSeries: IShipSeriesInfo = {
         "Golden Chimney",
         "Golden Wheel",
     ],
+    bonus: [0, 0, 1, 2, 2, 2, 3, 3, 4],
 };
 
 export const AllSeries = [

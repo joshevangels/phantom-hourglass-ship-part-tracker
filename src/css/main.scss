@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
 body {
     display: flex;
     margin: 0;
@@ -9,23 +11,39 @@ body {
             background: #19b5fe;
             color: #150811;
             padding: 20px;
-            width: calc(100% - 40px);
+            width: 100%;
+            max-height: 200px;
             position: absolute;
+
+            .outer-link {
+                color: #ecf0f1;
+            }
         }
 
         main {
-            padding-top: 40px + 70px + 30px;
+            padding-top: 200px;
             padding-left: 40px;
 
             .ship-series-cards {
                 display: flex;
                 flex-direction: row;
-                
+
                 .ship-series-card {
                     padding: 20px;
+                    min-width: 200px;
+
+                    .title {
+                        padding-bottom: 10px;
+                    }
     
                     .ship-parts {
                         padding-left: 10px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .ship-bonus {
+                        font-weight: 500
                     }
                 }
             }
