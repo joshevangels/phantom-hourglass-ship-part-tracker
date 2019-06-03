@@ -15,10 +15,12 @@ export class Page extends React.Component {
                     </h2>
                     <p>
                         inspired by
-                        <a className="outer-link" href={spreadsheetLink}> chuggaaconroy's ship part spreadsheet</a>
+                        <a className="outer-link" href={spreadsheetLink} target="_blank">
+                             chuggaaconroy's ship part spreadsheet
+                        </a>
                     </p>
                     <p>
-                        <a className="outer-link" href="https://www.youtube.com/user/chuggaaconroy">
+                        <a className="outer-link" href="https://www.youtube.com/user/chuggaaconroy" target="_blank">
                             chuggaaconroy's channel
                         </a>
                     </p>

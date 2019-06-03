@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run clean && tsc --pretty && jest",
     "dev": "npm run clean && parcel src/index.html",
-    "build": "npm run clean && parcel build src/index.html",
+    "build": "npm run clean && parcel build --public-url '/phantom-hourglass-ship-part-tracker' src/index.html",
     "deploy": "npm run build && gh-pages -d dist",
     "clean": "rm -rf dist/*"
   },
