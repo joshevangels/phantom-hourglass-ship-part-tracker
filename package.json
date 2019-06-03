@@ -4,9 +4,11 @@
   "description": "development",
   "main": "index.js",
   "scripts": {
-    "test": "tsc --pretty && jest",
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "test": "npm run clean && tsc --pretty && jest",
+    "dev": "npm run clean && parcel src/index.html",
+    "build": "npm run clean && parcel build src/index.html",
+    "deploy": "npm run build && gh-pages -d dist",
+    "clean": "rm -rf dist/*"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/joshevangels/phantom-hourglass-ship-part-tracker/issues"
   },
-  "homepage": "https://github.com/joshevangels/phantom-hourglass-ship-part-tracker#readme",
+  "homepage": "https://joshevangels.github.io/phantom-hourglass-ship-part-tracker/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.8.6",
