@@ -81,13 +81,13 @@ describe("ShipSeriesCard Component", () => {
 
         const subject = shallow(<ShipSeriesCard {...props}/>);
 
-        subject.find(".ship-part-part1").simulate("change", {target: { checked: true, name: "have-part1"}});
+        subject.find(".input-ship-part-part1").simulate("change", {target: { checked: true, name: "have-part1"}});
 
         subject.update();
 
         expect(subject.find(".ship-bonus").text()).toBe("+1 Heart");
 
-        subject.find(".ship-part-part2").simulate("change", {target: { checked: true, name: "have-part2}"}});
+        subject.find(".input-ship-part-part2").simulate("change", {target: { checked: true, name: "have-part2}"}});
 
         subject.update();
 

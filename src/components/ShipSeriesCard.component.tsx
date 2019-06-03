@@ -60,6 +60,7 @@ export class ShipSeriesCard extends React.Component<IShipSeriesCardProps, IShipS
             return (
                 <label className={`ship-part ship-part-${className}`} key={`ship-part-${className}`}>
                     <input
+                        className={`input-ship-part-${className}`}
                         name={`have-${className}`}
                         type="checkbox"
                         onChange={this.handleChange}
