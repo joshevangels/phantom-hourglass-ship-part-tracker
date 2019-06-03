@@ -63,7 +63,6 @@ describe("ShipSeriesCard Component", function () {
         var subject = enzyme_1.shallow(React.createElement(ShipSeriesCard_component_1.ShipSeriesCard, __assign({}, props)));
         subject.find(".input-ship-part-part1").simulate("change", { target: { checked: true, name: "have-part1" } });
         subject.update();
-        console.error("===>", subject.find(".ship-part-part1").debug());
         expect(subject.find(".ship-bonus").text()).toBe("+1 Heart");
         subject.find(".input-ship-part-part2").simulate("change", { target: { checked: true, name: "have-part2}" } });
         subject.update();
