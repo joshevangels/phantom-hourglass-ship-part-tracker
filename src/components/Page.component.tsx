@@ -14,7 +14,7 @@ export class Page extends React.Component {
                         Phantom Hourglass Ship Part Tracker
                     </h2>
                     <p>
-                        inspired by
+                        inspired by {/* needed to add space to the left */}
                         <a className="outer-link" href={spreadsheetLink} target="_blank">
                              chuggaaconroy's ship part spreadsheet
                         </a>
