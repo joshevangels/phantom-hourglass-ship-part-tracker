@@ -22,8 +22,8 @@
   "homepage": "https://joshevangels.github.io/phantom-hourglass-ship-part-tracker/",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   },
   "jest": {
     "roots": [
@@ -48,19 +48,19 @@
   "devDependencies": {
     "@types/enzyme": "^3.10.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
-    "@types/jest": "^24.0.16",
-    "@types/react": "^16.8.24",
-    "@types/react-dom": "^16.8.5",
+    "@types/jest": "^24.0.18",
+    "@types/react": "^16.9.5",
+    "@types/react-dom": "^16.9.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "gh-pages": "2.0.1",
-    "jest": "^24.8.0",
+    "jest": "^24.9.0",
     "parcel-bundler": "^1.12.3",
-    "sass": "^1.22.9",
-    "ts-jest": "^24.0.2",
-    "tslint": "^5.18.0",
-    "tslint-react": "^4.0.0",
-    "typescript": "^3.5.3",
+    "sass": "^1.23.0",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.0",
+    "tslint-react": "^4.1.0",
+    "typescript": "^3.6.3",
     "typescript-tslint-plugin": "^0.4.0"
   }
 }
