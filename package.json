@@ -21,7 +21,6 @@
   },
   "homepage": "https://joshevangels.github.io/phantom-hourglass-ship-part-tracker/",
   "dependencies": {
-    "bootstrap": "^4.3.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   },

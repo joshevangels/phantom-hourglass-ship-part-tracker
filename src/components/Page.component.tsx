@@ -26,10 +26,8 @@ export class Page extends React.Component {
                     </p>
                 </header>
                 <main>
-                    <div className="container">
-                        <div className="ship-series-cards row">
-                            {this.renderShipCards()}
-                        </div>
+                    <div className="ship-series-cards">
+                        {this.renderShipCards()}
                     </div>
                 </main>
             </div>

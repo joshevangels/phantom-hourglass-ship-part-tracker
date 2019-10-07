@@ -21,7 +21,7 @@ export class ShipSeriesCard extends React.Component<IShipSeriesCardProps, IShipS
 
     public render() {
         return (
-            <div className="ship-series-card col-sm-12 col-md-6 col-lg-3">
+            <div className="ship-series-card">
                 <div className="title">
                     {this.props.series.seriesName}
                 </div>
