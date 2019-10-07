@@ -9,41 +9,17 @@ interface IShipSeriesCardState {
     partCount: number;
 }
 
-export class ShipSeriesCard extends React.Component<IShipSeriesCardProps, IShipSeriesCardState> {
+export const ShipSeriesCard: React.FunctionComponent<IShipSeriesCardProps> = (props: IShipSeriesCardProps) => {
+    const [partCount, setPartCount] = React.useState(0);
 
-    public constructor(props: any) {
-        super(props);
+    const handleChange = (event: {target: {checked: boolean, name: string}}) => {
+        const newValue = event.target.checked ? partCount + 1 : partCount - 1;
 
-        this.state = {
-            partCount: 0,
-        };
-    }
+        setPartCount(newValue);
+    };
 
-    public render() {
-        return (
-            <div className="ship-series-card">
-                <div className="title">
-                    {this.props.series.seriesName}
-                </div>
-                <form className="ship-parts">
-                    {this.renderParts(this.props.series.parts)}
-                </form>
-                <div className="ship-bonus">
-                    {this.renderBonus()}
-                </div>
-            </div>
-        );
-    }
-
-    private handleChange = (event: {target: {checked: boolean, name: string}}) => {
-        const count = this.state.partCount;
-        const newValue = event.target.checked ? count + 1 : count - 1;
-
-        this.setState({partCount: newValue});
-    }
-
-    private renderBonus() {
-        const bonus = this.props.series.bonus[this.state.partCount];
+    function renderBonus() {
+        const bonus = props.series.bonus[partCount];
 
         if (bonus === 0) {
             return "No Bonus";
@@ -54,7 +30,7 @@ export class ShipSeriesCard extends React.Component<IShipSeriesCardProps, IShipS
         }
     }
 
-    private renderParts(parts: string[]) {
+    function renderParts(parts: string[]) {
         return parts.map((part) => {
             const className = part.replace(" ", "-");
             return (
@@ -63,11 +39,27 @@ export class ShipSeriesCard extends React.Component<IShipSeriesCardProps, IShipS
                         className={`input-ship-part-${className}`}
                         name={`have-${className}`}
                         type="checkbox"
-                        onChange={this.handleChange}
+                        onChange={handleChange}
                     />
                     {`  ${part}`}
                 </label>
             );
         });
     }
-}
+
+    return (
+        <div className="ship-series-card">
+            <div className="title">
+                {props.series.seriesName}
+            </div>
+            <form className="ship-parts">
+                {renderParts(props.series.parts)}
+            </form>
+            <div className="ship-bonus">
+                {renderBonus()}
+            </div>
+        </div>
+    );
+};
+
+ShipSeriesCard.displayName = "ShipSeriesCard";

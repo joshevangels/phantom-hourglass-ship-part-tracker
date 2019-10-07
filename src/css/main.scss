@@ -9,10 +9,9 @@ body {
             background: #19b5fe;
             color: #150811;
             padding: 20px;
-            width: 100%;
+            width: calc(100% - 40px);
             max-height: 200px;
-            position: fixed;
-
+            position: absolute;
 
             .outer-link {
                 color: #ecf0f1;
