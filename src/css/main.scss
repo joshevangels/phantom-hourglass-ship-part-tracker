@@ -1,33 +1,63 @@
 body {
     display: flex;
+
     margin: 0;
-    background: #ecf0f1;
+
+    background-color: #4E9CE1;
+    background-image: url(../resources/wind-waker-ocean-tile-grey-scale.png);
+    background-repeat: repeat;
+    background-size: 150px 150px;
+    
     font-family: Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+
+    #root {
+        width: 100%;
+    }
 
     .page {
         header {
-            background: #19b5fe;
+            background-color: #dfc36e;
+
             color: #150811;
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+
             padding: 20px;
+
             width: calc(100% - 40px);
             max-height: 200px;
+
             position: absolute;
 
             .outer-link {
-                color: #ecf0f1;
+                color: #150811;
+                font-weight: 800;
             }
         }
 
         main {
+            display: grid;
+            justify-items: center;
+            width: calc(100% - 80px);
+
             padding-top: 200px;
             padding-left: 40px;
+            padding-right: 40px;
 
             .ship-series-cards {
                 display: grid;
 
                 .ship-series-card {
+                    margin: 20px;
                     padding: 20px;
-                    min-width: 200px;
+
+                    border-radius: 5px;
+                    box-shadow: 5px 5px 5px #3173CC;
+
+                    min-width: 160px;
+
+                    background-color: #dfc36e;
+
+                    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 
                     .title {
                         font-weight: 600;
@@ -65,21 +95,8 @@ body {
     }
 }
 
-
 @media (min-width: 950px) {
     .ship-series-cards {
         grid-template-columns: auto auto auto auto;
-    }
-}
-
-@media (min-width: 1200px) {
-    .ship-series-cards {
-        grid-template-columns: auto auto auto auto auto;
-    }
-}
-
-@media (min-width: 1500px) {
-    .ship-series-cards {
-        grid-template-columns: auto auto auto auto auto auto;
     }
 }
